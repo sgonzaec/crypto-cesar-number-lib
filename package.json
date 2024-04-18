@@ -1,9 +1,14 @@
 {
   "name": "crypto-cesar-number-lib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist-node/index.js",
   "browser": "dist-browser/index.js",
   "description": "There are 2 functions that encrypt text to number and in the opposite way",
+  "homepage": "https://github.com/sgonzaec/crypto-cesar-number-lib#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sgonzaec/crypto-cesar-number-lib"
+  },
   "keywords": ["crypto", "cesar", "number", "numbers", "crypto to number", "encrypt", "decrypt"],
   "author": "Simon Gonzalez E (https://github.com/sgonzaec)",
   "license": "MIT",
