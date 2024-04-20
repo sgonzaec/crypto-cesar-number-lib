@@ -1,6 +1,6 @@
 {
   "name": "crypto-cesar-number-lib",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "main": "dist-node/index.js",
   "browser": "dist-browser/index.js",
   "description": "There are 2 functions that encrypt text to number and in the opposite way",
