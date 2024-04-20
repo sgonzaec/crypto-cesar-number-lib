@@ -1,5 +1,5 @@
 
-# Numeric Caesar encrypt
+# Numeric Caesar encrypt (RE-NEWED)
 
 This library enhances text manipulation by implementing Caesar encryption, enabling the transformation of textual information into a purely numeric representation.
 

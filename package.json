@@ -9,15 +9,35 @@
     "type": "git",
     "url": "https://github.com/sgonzaec/crypto-cesar-number-lib"
   },
-  "keywords": ["crypto", "cesar", "number", "numbers", "crypto to number", "encrypt", "decrypt"],
+  "keywords": [
+    "crypto",
+    "cesar",
+    "number",
+    "numbers",
+    "crypto to number",
+    "encrypt",
+    "decrypt"
+  ],
   "author": "Simon Gonzalez E (https://github.com/sgonzaec)",
   "license": "MIT",
   "scripts": {
-    "build-browser": "npx tsc src/index.ts --outDir dist-browser --module ES6",
-    "build-node": "npx tsc src/index.ts --outDir dist-node",
+    "test": "jest",
+    "build-browser": "mkdir -p dist-browser && cp src/index.js dist-browser/",
+    "build-node": "mkdir -p dist-node && cp src/index.js dist-node/",
     "build": "npm run build-browser & npm run build-node"
   },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
   "devDependencies": {
+    "@babel/preset-env": "^7.24.4",
+    "@types/jest": "^29.5.12",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.12.7",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
     "typescript": "^5.4.5"
   }
 }

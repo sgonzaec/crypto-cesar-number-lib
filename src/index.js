@@ -3,7 +3,7 @@
  * @param chain Text string to encrypt
  * @returns result
  */
-const encrypt = (chain: string) => {
+const encrypt = (chain) => {
   let result = "";
   for (let i = 0; i < chain.length; i++) {
     let charCode = chain.charCodeAt(i);
@@ -17,16 +17,18 @@ const encrypt = (chain: string) => {
  * @param chain String of numbers to decrypt
  * @returns result
  */
-const decrypt = (chain: string) => {
+const decrypt = (chain) => {
   let result = "";
-  for (let i = 0; i < chain.length; i++) {
-    let charCode = chain.charCodeAt(i);
+  for (let i = 0; i < chain.length; i += 3) {
+    let segment = chain.substr(i, 3); 
+    let charCode = parseInt(segment, 10); 
     result += String.fromCharCode(charCode);
   }
   return result;
 };
 
-export default {
+
+module.exports = {
   encrypt,
   decrypt,
 };
