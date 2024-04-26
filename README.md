@@ -5,6 +5,10 @@ This library enhances text manipulation by implementing Caesar encryption, enabl
 
 ![Cesar](https://www.ugr.es/~anillos/textos/pdf/2010/EXPO-1.Criptografia/Img/img21.gif)
 
+## Note
+
+This library is made purely for basic uses, as it **employs weak encryption** solely to transform information for very specific needs.
+
 ## How to use
 
 ### Install
